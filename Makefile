@@ -34,13 +34,9 @@ $(OBJDIR)/%.c.o: %.c
 clean:
 	rm -f $(OBJECTS) $(APPNAME)
 
-<<<<<<< HEAD
 run: $(OUT)
 	@./$(OUT)
 
 .PHONY: all clean run
-=======
-.PHONY: all clean 
->>>>>>> ad085b5e7f0908465a2e76a4ff399b794eb31fc9
 
 -include $(OBJECTS:%.o=%.d)
