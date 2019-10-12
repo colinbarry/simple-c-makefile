@@ -32,7 +32,7 @@ $(OBJDIR)/%.c.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
-	rm -f $(OBJECTS) $(APPNAME)
+	rm -f $(OBJECTS) $(APPNAME) $(OBJECTS:%.o=%.d)
 
 run: $(OUT)
 	@./$(OUT)
